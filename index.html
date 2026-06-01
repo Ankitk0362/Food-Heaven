@@ -1,0 +1,759 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Taste Haven – A luxury fine dining experience crafted with passion, elevated by artistry." />
+    <meta name="keywords" content="fine dining, luxury restaurant, Taste Haven, gourmet food, reservation" />
+    <title>Taste Haven | Luxury Fine Dining</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <div class="loader-inner">
+        <div class="loader-logo">Taste Haven</div>
+        <div class="loader-bar"><div class="loader-fill"></div></div>
+        <p class="loader-tagline">Preparing your experience…</p>
+      </div>
+    </div>
+    <header id="navbar">
+      <nav class="nav-container">
+        <a href="#home" class="nav-logo">
+          <span class="logo-script">Taste Haven</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#reservation" class="nav-link">Reservation</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="dark-toggle" id="darkToggle" title="Toggle theme"><i class="fas fa-moon"></i></button>
+          <a href="#reservation" class="btn-nav">Book a Table</a>
+          <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80" alt="Luxury fine dining table" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-pre reveal-up">Est. 2025 · Fine Dining</p>
+        <h1 class="hero-title reveal-up">
+          <span class="hero-title-line">Where Culinary</span>
+          <span class="hero-title-line hero-script">Art Meets</span>
+          <span class="hero-title-line">Perfection</span>
+        </h1>
+        <p class="hero-sub reveal-up" id="heroTyping"></p>
+        <div class="hero-cta reveal-up">
+          <a href="#reservation" class="btn-primary">Book a Table</a>
+          <a href="#menu" class="btn-ghost">Explore Menu</a>
+        </div>
+        <div class="hero-scroll reveal-up">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <div class="hero-badge"><i class="fas fa-star"></i><span>Michelin Star</span></div>
+        <div class="hero-badge"><i class="fas fa-award"></i><span>Best Restaurant 2024</span></div>
+        <div class="hero-badge"><i class="fas fa-leaf"></i><span>Farm to Table</span></div>
+      </div>
+    </section>
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-pre">Our Story</p>
+          <h2 class="section-title">A Passion For <em>Exceptional</em> Cuisine</h2>
+          <div class="title-divider"><span></span><i class="fas fa-utensils"></i><span></span></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-images reveal-left">
+            <div class="about-img-main">
+              <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&q=80" alt="Restaurant interior" />
+            </div>
+            <div class="about-img-float">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Gourmet dish" />
+            </div>
+            <div class="about-years-badge">
+              <span class="years-num">02</span>
+              <span class="years-text">Years of<br/>Excellence</span>
+            </div>
+          </div>
+          <div class="about-text reveal-right">
+            <h3>Crafting Memories, One Plate at a Time</h3>
+            <p>Founded in 2025, Taste Haven was born from a singular obsession: to transform the finest seasonal ingredients into transcendent dining experiences. Our kitchen is a stage, and every dish is a performance.</p>
+            <p>Nestled in the heart of the city, our restaurant seamlessly blends classical French techniques with bold contemporary flavors — a philosophy that has earned us a place among the world's most celebrated dining destinations.</p>
+            <div class="about-chef">
+              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=120&q=80" alt="Executive Chef" class="chef-img" />
+              <div class="chef-info">
+                <h4>Ankit Kumar Gupta</h4>
+                <p>Executive Chef & Founder</p>
+                <div class="chef-sig">Ankit</div>
+              </div>
+            </div>
+            <a href="#menu" class="btn-primary">View Our Menu</a>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card reveal-up">
+            <span class="stat-num" data-target="2">0</span>
+            <span class="stat-plus">+</span>
+            <p>Years of Experience</p>
+          </div>
+          <div class="stat-card reveal-up">
+            <span class="stat-num" data-target="3000">0</span>
+            <span class="stat-plus">+</span>
+            <p>Happy Guests</p>
+          </div>
+          <div class="stat-card reveal-up">
+            <span class="stat-num" data-target="24">0</span>
+            <span class="stat-plus">+</span>
+            <p>Master Chefs</p>
+          </div>
+          <div class="stat-card reveal-up">
+            <span class="stat-num" data-target="120">0</span>
+            <span class="stat-plus">+</span>
+            <p>Signature Dishes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="menu" class="menu section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-pre">Curated Selection</p>
+          <h2 class="section-title">Our <em>Signature</em> Menu</h2>
+          <div class="title-divider"><span></span><i class="fas fa-utensils"></i><span></span></div>
+        </div>
+        <div class="menu-tabs reveal-up">
+          <button class="menu-tab active" data-cat="starters">Starters</button>
+          <button class="menu-tab" data-cat="mains">Main Course</button>
+          <button class="menu-tab" data-cat="desserts">Desserts</button>
+          <button class="menu-tab" data-cat="drinks">Drinks</button>
+        </div>
+        <div class="menu-grid" id="menuGrid">
+          <div class="menu-card" data-cat="starters">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1551248429-40975aa4de74?w=400&q=80" alt="Burrata Truffle" />
+              <span class="menu-badge">Chef's Choice</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Burrata & Black Truffle</h3>
+                <span class="menu-price">$24</span>
+              </div>
+              <p>Silken burrata, shaved black truffle, heirloom tomatoes, and basil oil on toasted sourdough.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★★</div>
+                <button class="btn-order" onclick="addToCart('Burrata & Black Truffle', 24)">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card" data-cat="starters">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Lobster Bisque" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Lobster Bisque</h3>
+                <span class="menu-price">$28</span>
+              </div>
+              <p>Velvety Maine lobster bisque with crème fraîche, chives, and a drizzle of aged cognac.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★★</div>
+                <button class="btn-order" onclick="addToCart('Lobster Bisque', 28)">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card" data-cat="starters">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=400&q=80" alt="Tuna Tartare" />
+              <span class="menu-badge">Signature</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Sashimi Tuna Tartare</h3>
+                <span class="menu-price">$32</span>
+              </div>
+              <p>Hand-cut bluefin tuna, avocado cream, yuzu ponzu, micro shiso, and sesame crisps.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★★</div>
+                <button class="btn-order" onclick="addToCart('Sashimi Tuna Tartare', 32)">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card hidden" data-cat="mains">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=400&q=80" alt="Wagyu Ribeye" />
+              <span class="menu-badge">Premium</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>A5 Wagyu Ribeye</h3>
+                <span class="menu-price">$145</span>
+              </div>
+              <p>Japanese A5 Wagyu, truffle pomme purée, glazed cipollini, bone marrow jus.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★★</div>
+                <button class="btn-order" onclick="addToCart('A5 Wagyu Ribeye', 145)">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card hidden" data-cat="mains">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=400&q=80" alt="Pan Seared Duck" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Magret Duck Breast</h3>
+                <span class="menu-price">$68</span>
+              </div>
+              <p>Pan-seared duck magret, cherry gastrique, celeriac dauphinois, seasonal greens.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★☆</div>
+                <button class="btn-order" onclick="addToCart('Magret Duck Breast', 68)">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card hidden" data-cat="mains">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&q=80" alt="Sea Bass" />
+              <span class="menu-badge">Chef's Choice</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Chilean Sea Bass</h3>
+                <span class="menu-price">$82</span>
+              </div>
+              <p>Miso-glazed sea bass, forbidden black rice, bok choy, ginger dashi broth.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★★</div>
+                <button class="btn-order" onclick="addToCart('Chilean Sea Bass', 82)">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card hidden" data-cat="desserts">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80" alt="Chocolate Soufflé" />
+              <span class="menu-badge">Signature</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Dark Chocolate Soufflé</h3>
+                <span class="menu-price">$22</span>
+              </div>
+              <p>Valrhona 72% dark chocolate soufflé, Tahitian vanilla ice cream, gold leaf.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★★</div>
+                <button class="btn-order" onclick="addToCart('Dark Chocolate Soufflé', 22)">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card hidden" data-cat="desserts">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80" alt="Crème Brûlée" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Lavender Crème Brûlée</h3>
+                <span class="menu-price">$18</span>
+              </div>
+              <p>Classic Provençal lavender-infused custard with a perfectly caramelised sugar crust.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★★</div>
+                <button class="btn-order" onclick="addToCart('Lavender Crème Brûlée', 18)">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card hidden" data-cat="desserts">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&q=80" alt="Mille Feuille" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Strawberry Mille-Feuille</h3>
+                <span class="menu-price">$20</span>
+              </div>
+              <p>Caramelised puff pastry, Chantilly cream, fresh strawberries, rose water coulis.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★☆</div>
+                <button class="btn-order" onclick="addToCart('Strawberry Mille-Feuille', 20)">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card hidden" data-cat="drinks">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80" alt="Vintage Wine" />
+              <span class="menu-badge">Reserve</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Châteauneuf-du-Pape</h3>
+                <span class="menu-price">$95</span>
+              </div>
+              <p>2018 vintage. Rich, full-bodied southern Rhône blend with dark fruit and garrigue notes.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★★</div>
+                <button class="btn-order" onclick="addToCart('Châteauneuf-du-Pape', 95)">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card hidden" data-cat="drinks">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=400&q=80" alt="Cocktail" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Golden Saffron Spritz</h3>
+                <span class="menu-price">$22</span>
+              </div>
+              <p>House saffron-infused vodka, elderflower, fresh citrus, prosecco, edible gold dust.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★★</div>
+                <button class="btn-order" onclick="addToCart('Golden Saffron Spritz', 22)">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card hidden" data-cat="drinks">
+            <div class="menu-card-img">
+              <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=400&q=80" alt="Mocktail" />
+            </div>
+            <div class="menu-card-body">
+              <div class="menu-card-top">
+                <h3>Rose Garden Mocktail</h3>
+                <span class="menu-price">$14</span>
+              </div>
+              <p>Cold-pressed watermelon, hibiscus, rose lychee syrup, fresh mint, sparkling water.</p>
+              <div class="menu-card-footer">
+                <div class="stars">★★★★☆</div>
+                <button class="btn-order" onclick="addToCart('Rose Garden Mocktail', 14)">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h3><i class="fas fa-shopping-bag"></i> Your Order</h3>
+        <button onclick="toggleCart()" class="cart-close"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <p class="cart-empty">Your cart is empty</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">Total: <strong id="cartTotal">$0</strong></div>
+        <button class="btn-primary cart-checkout">Confirm Order</button>
+      </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <button class="cart-float" id="cartFloat" onclick="toggleCart()">
+      <i class="fas fa-shopping-bag"></i>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <section class="offers section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-pre">Limited Time</p>
+          <h2 class="section-title"><em>Exclusive</em> Offers</h2>
+          <div class="title-divider"><span></span><i class="fas fa-utensils"></i><span></span></div>
+        </div>
+        <div class="offers-grid">
+          <div class="offer-card reveal-up">
+            <div class="offer-img">
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Chef's Table" />
+              <div class="offer-overlay">
+                <span class="offer-badge">Save 20%</span>
+              </div>
+            </div>
+            <div class="offer-body">
+              <h3>Chef's Table Experience</h3>
+              <p>Exclusive 7-course tasting menu with wine pairing for two. An intimate culinary journey.</p>
+              <div class="offer-price"><del>$380</del> <strong>$304</strong></div>
+              <a href="#reservation" class="btn-primary">Reserve Now</a>
+            </div>
+          </div>
+          <div class="offer-card offer-featured reveal-up">
+            <div class="offer-img">
+              <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600&q=80" alt="Weekend Brunch" />
+              <div class="offer-overlay">
+                <span class="offer-badge">Weekend Only</span>
+              </div>
+            </div>
+            <div class="offer-body">
+              <h3>Sunday Grand Brunch</h3>
+              <p>Bottomless champagne brunch featuring live jazz, artisan pastries, and seasonal entrées.</p>
+              <div class="offer-price"><del>$120</del> <strong>$89</strong></div>
+              <a href="#reservation" class="btn-primary">Reserve Now</a>
+            </div>
+          </div>
+          <div class="offer-card reveal-up">
+            <div class="offer-img">
+              <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80" alt="Private Dining" />
+              <div class="offer-overlay">
+                <span class="offer-badge">Groups</span>
+              </div>
+            </div>
+            <div class="offer-body">
+              <h3>Private Dining Room</h3>
+              <p>Exclusive private room for 8–20 guests with a bespoke menu crafted by Chef Élise.</p>
+              <div class="offer-price"><strong>From $1,200</strong></div>
+              <a href="#contact" class="btn-primary">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="gallery section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-pre">Visual Story</p>
+          <h2 class="section-title">Inside <em>Taste Haven</em></h2>
+          <div class="title-divider"><span></span><i class="fas fa-utensils"></i><span></span></div>
+        </div>
+        <div class="gallery-grid reveal-up">
+          <div class="g-item g-tall" onclick="openLightbox('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=90', 'Dining Room')">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Dining Room" />
+            <div class="g-hover"><i class="fas fa-expand"></i></div>
+          </div>
+          <div class="g-item" onclick="openLightbox('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200&q=90', 'Signature Dish')">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Signature Dish" />
+            <div class="g-hover"><i class="fas fa-expand"></i></div>
+          </div>
+          <div class="g-item" onclick="openLightbox('https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=90', 'Bar')">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Bar" />
+            <div class="g-hover"><i class="fas fa-expand"></i></div>
+          </div>
+          <div class="g-item g-wide" onclick="openLightbox('https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=1200&q=90', 'Interior')">
+            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=600&q=80" alt="Interior" />
+            <div class="g-hover"><i class="fas fa-expand"></i></div>
+          </div>
+          <div class="g-item" onclick="openLightbox('https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1200&q=90', 'Dessert')">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80" alt="Dessert" />
+            <div class="g-hover"><i class="fas fa-expand"></i></div>
+          </div>
+          <div class="g-item" onclick="openLightbox('https://images.unsplash.com/photo-1551248429-40975aa4de74?w=1200&q=90', 'Starter')">
+            <img src="https://images.unsplash.com/photo-1551248429-40975aa4de74?w=600&q=80" alt="Starter" />
+            <div class="g-hover"><i class="fas fa-expand"></i></div>
+          </div>
+          <div class="g-item" onclick="openLightbox('https://images.unsplash.com/photo-1544145945-f90425340c7e?w=1200&q=90', 'Wine Cellar')">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80" alt="Wine Cellar" />
+            <div class="g-hover"><i class="fas fa-expand"></i></div>
+          </div>
+          <div class="g-item" onclick="openLightbox('https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200&q=90', 'Chef at Work')">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80" alt="Chef" />
+            <div class="g-hover"><i class="fas fa-expand"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+      <div class="lightbox-content" onclick="event.stopPropagation()">
+        <img id="lightboxImg" src="" alt="" />
+        <p id="lightboxCaption"></p>
+      </div>
+    </div>
+    <section id="reviews" class="reviews section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-pre">Guest Voices</p>
+          <h2 class="section-title">What Our <em>Guests</em> Say</h2>
+          <div class="title-divider"><span></span><i class="fas fa-utensils"></i><span></span></div>
+        </div>
+        <div class="testimonial-wrapper reveal-up">
+          <div class="testimonial-slider" id="testimonialSlider">
+            <div class="testimonial-slide active">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>"Taste Haven redefined what I thought fine dining could be. Chef Élise's tasting menu was nothing short of a spiritual experience. Every bite told a story. We will absolutely return."</p>
+                <div class="testimonial-author">
+                  <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=80&q=80" alt="Guest" />
+                  <div>
+                    <strong>Alexandre Dupont</strong>
+                    <span>Food Critic, Le Monde</span>
+                    <div class="stars">★★★★★</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>"We celebrated our 10th anniversary at Taste Haven and it was utterly magical. The private dining room, the personalized menu, the impeccable service — every detail was perfect."</p>
+                <div class="testimonial-author">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Guest" />
+                  <div>
+                    <strong>Sophie & James Hartwell</strong>
+                    <span>Loyal Guests since 2015</span>
+                    <div class="stars">★★★★★</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>"The A5 Wagyu Ribeye is the single best thing I have ever eaten. The ambiance is breathtaking, the sommelier's pairings were inspired, and the service was warm yet elevated."</p>
+                <div class="testimonial-author">
+                  <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=80&q=80" alt="Guest" />
+                  <div>
+                    <strong>Marcus Chen</strong>
+                    <span>Travel & Lifestyle Blogger</span>
+                    <div class="stars">★★★★★</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial-card">
+                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                <p>"I have dined at three-Michelin-star restaurants across Europe and Asia. Taste Haven sits comfortably among the very finest. The chocolate soufflé alone is worth the trip."</p>
+                <div class="testimonial-author">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Guest" />
+                  <div>
+                    <strong>Priya Nair</strong>
+                    <span>Executive, Fortune 500</span>
+                    <div class="stars">★★★★★</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="t-btn" id="tPrev"><i class="fas fa-chevron-left"></i></button>
+            <div class="t-dots" id="tDots"></div>
+            <button class="t-btn" id="tNext"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="reservation" class="reservation section">
+      <div class="reservation-bg">
+        <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1920&q=80" alt="Restaurant ambiance" />
+        <div class="reservation-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="reservation-inner">
+          <div class="reservation-text reveal-left">
+            <p class="section-pre">Reserve Your Evening</p>
+            <h2 class="section-title">Make a <em>Reservation</em></h2>
+            <p>We take great care in curating your dining experience. Book your table and allow us to prepare something truly special for you.</p>
+            <ul class="res-info">
+              <li><i class="fas fa-clock"></i><span><strong>Lunch:</strong> Tue–Sat, 12:00–14:30</span></li>
+              <li><i class="fas fa-clock"></i><span><strong>Dinner:</strong> Tue–Sun, 18:30–22:30</span></li>
+              <li><i class="fas fa-phone"></i><span>+91 8292277048</span></li>
+            </ul>
+          </div>
+          <div class="reservation-form reveal-right">
+            <form id="resForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Full Name</label>
+                  <input type="text" id="resName" placeholder="Your full name" />
+                  <span class="form-error" id="resNameErr"></span>
+                </div>
+                <div class="form-group">
+                  <label>Email Address</label>
+                  <input type="email" id="resEmail" placeholder="your@email.com" />
+                  <span class="form-error" id="resEmailErr"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Phone Number</label>
+                  <input type="tel" id="resPhone" placeholder="+1 (555) 000-0000" />
+                  <span class="form-error" id="resPhoneErr"></span>
+                </div>
+                <div class="form-group">
+                  <label>Number of Guests</label>
+                  <select id="resGuests">
+                    <option value="">Select guests</option>
+                    <option>1 Guest</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                    <option>5–8 Guests</option>
+                    <option>9+ Guests (Private)</option>
+                  </select>
+                  <span class="form-error" id="resGuestsErr"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Date</label>
+                  <input type="date" id="resDate" />
+                  <span class="form-error" id="resDateErr"></span>
+                </div>
+                <div class="form-group">
+                  <label>Time</label>
+                  <select id="resTime">
+                    <option value="">Select time</option>
+                    <option>12:00 PM</option>
+                    <option>12:30 PM</option>
+                    <option>1:00 PM</option>
+                    <option>1:30 PM</option>
+                    <option>6:30 PM</option>
+                    <option>7:00 PM</option>
+                    <option>7:30 PM</option>
+                    <option>8:00 PM</option>
+                    <option>8:30 PM</option>
+                    <option>9:00 PM</option>
+                  </select>
+                  <span class="form-error" id="resTimeErr"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Special Requests</label>
+                <textarea id="resMessage" rows="3" placeholder="Dietary requirements, celebrations, special arrangements…"></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn-full">Confirm Reservation</button>
+              <div class="form-success" id="resSuccess">
+                <i class="fas fa-check-circle"></i> Your reservation has been received. We will confirm shortly.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-pre">Get in Touch</p>
+          <h2 class="section-title">Find <em>Us</em></h2>
+          <div class="title-divider"><span></span><i class="fas fa-utensils"></i><span></span></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Address</h4>
+                <p>Greater Noida<br/>Near Knowledge Part II Metro Station</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Reservations</h4>
+                <p>+91 8292277048</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>ankitkumargupta.work@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Opening Hours</h4>
+                <p>Tue–Sat: Lunch 12–2:30 PM<br/>Tue–Sun: Dinner 6:30–10:30 PM<br/>Monday: Closed</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="contact-map reveal-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.8!2d-74.006!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjEiTiA3NMKwMDAnMjEuNiJX!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen loading="lazy" title="Taste Haven Location"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-brand">
+              <div class="logo-script footer-logo">Taste Haven</div>
+              <p>A sanctuary of exceptional cuisine, where every meal becomes an enduring memory.</p>
+              <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reservation">Reservations</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Opening Hours</h4>
+              <ul class="hours-list">
+                <li><span>Monday</span><span>Closed</span></li>
+                <li><span>Tue – Sat</span><span>12PM – 10:30PM</span></li>
+                <li><span>Sunday</span><span>6:30PM – 10:30PM</span></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Newsletter</h4>
+              <p>Subscribe for exclusive events and seasonal menus.</p>
+              <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="your@email.com" id="newsletterEmail" />
+                <button type="submit"><i class="fas fa-paper-plane"></i></button>
+              </form>
+              <div class="newsletter-success" id="newsletterSuccess">Thank you for subscribing!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2024 Taste Haven. All rights reserved. Crafted with <i class="fas fa-heart"></i> for exceptional dining.</p>
+        </div>
+      </div>
+    </footer>
+    <button class="scroll-top" id="scrollTop" title="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+    <div class="chat-widget">
+      <div class="chat-popup" id="chatPopup">
+        <div class="chat-popup-header">
+          <div class="chat-avatar"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=60&q=80" alt="Host" /></div>
+          <div>
+            <strong>Marie</strong>
+            <span>Reservations Host · Online</span>
+          </div>
+          <button onclick="toggleChat()" class="chat-close-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-msg bot">Welcome to Taste Haven! I'm Marie. How may I assist you this evening?</div>
+        </div>
+        <div class="chat-input-row">
+          <input type="text" id="chatInput" placeholder="Type a message…" onkeydown="if(event.key==='Enter') sendChat()" />
+          <button onclick="sendChat()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <button class="chat-toggle" id="chatToggle" onclick="toggleChat()">
+        <i class="fas fa-comment-dots"></i>
+        <span class="chat-badge">1</span>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
